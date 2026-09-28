@@ -86,10 +86,11 @@ openlibrary-books/
 ├── book_fetcher.py
 ├── requirements.txt
 └── README.md
-
 ```
 
 ## منبع داده
 
 تمام اطلاعات از API عمومی و رایگان OpenLibrary دریافت می‌شود و نیازی به کلید API ندارد:
+```text
 https://openlibrary.org/dev/docs/api/subjects
+```
