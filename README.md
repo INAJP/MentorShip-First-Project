@@ -1,3 +1,4 @@
+```markdown
 # OpenLibrary Book Fetcher 📚
 
 اسکریپت پایتونی ساده برای دریافت اطلاعات کتاب از API عمومی
@@ -21,6 +22,7 @@
 
 ## نصب و اجرا
 
+```bash
 # ۱. کلون کردن ریپازیتوری
 git clone <REPO_URL>
 cd openlibrary-books
@@ -37,7 +39,7 @@ python book_fetcher.py
 
 ```
 
-پس از اجرا، فایل "books_after_2000.csv" در همان پوشه ساخته می‌شود.
+پس از اجرا، فایل `books_after_2000.csv` در همان پوشه ساخته می‌شود.
 
 ## نمونه خروجی فایل (Sample Output)
 
@@ -73,7 +75,7 @@ python book_fetcher.py
 
 ## ساختار پروژه
 
-```
+```text
 openlibrary-books/
 ├── book_fetcher.py     # اسکریپت اصلی
 ├── requirements.txt    # وابستگی‌ها
@@ -85,6 +87,8 @@ openlibrary-books/
 
 تمام اطلاعات از API عمومی و رایگان OpenLibrary دریافت می‌شود و نیازی به
 کلید API (API key) ندارد:
-https://openlibrary.org/dev/docs/api/subjects
+[https://openlibrary.org/dev/docs/api/subjects](https://openlibrary.org/dev/docs/api/subjects?utm_source=gemini)
+
+```
 
 ```
