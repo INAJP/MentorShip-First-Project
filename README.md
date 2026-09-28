@@ -1,40 +1,47 @@
 ```markdown
 # OpenLibrary Book Fetcher 📚
 
-اسکریپت پایتونی ساده برای دریافت اطلاعات کتاب از API عمومی
-[OpenLibrary](https://openlibrary.org/dev/docs/api/subjects)، فیلتر کردن
-کتاب‌های منتشرشده بعد از سال ۲۰۰۰ میلادی، و ذخیره‌ی خروجی مرتب‌شده در
-یک فایل CSV.
+اسکریپت پایتونی ساده برای دریافت اطلاعات کتاب از API عمومی [OpenLibrary](https://openlibrary.org/dev/docs/api/subjects)، فیلتر کردن کتاب‌های منتشرشده بعد از سال ۲۰۰۰ میلادی و ذخیره‌ی خروجی مرتب‌شده در یک فایل CSV.
 
 ## قابلیت‌ها
 
-- دریافت اطلاعات ۵۰ کتاب از موضوع مشخص‌شده از طریق
-  [Subjects API](https://openlibrary.org/dev/docs/api/subjects) خود OpenLibrary.
-- فیلتر کردن و نگه‌داشتن فقط کتاب‌هایی که سال انتشار اول (`first_publish_year`)
-  آن‌ها بعد از سال ۲۰۰۰ است.
+- دریافت اطلاعات کتاب‌ها از طریق [Subjects API](https://openlibrary.org/dev/docs/api/subjects) خود OpenLibrary.
+- فیلتر کردن و نگه‌داشتن فقط کتاب‌هایی که سال انتشار اول (`first_publish_year`) آن‌ها بعد از سال ۲۰۰۰ است.
 - ذخیره‌ی نتیجه در فایل `books_after_2000.csv`، مرتب‌شده بر اساس سال انتشار.
-- استفاده از تنها یک کتابخانه‌ی بیرونی: `requests`.
+- استفاده از کتابخانه‌ی `requests`.
 
 ## پیش‌نیازها
 
-- نسخه‌ی ۳.۸ یا بالاتر Python
+- پایتون نسخه‌ی ۳.۸ یا بالاتر
 - کتابخانه‌ی `requests`
 
 ## نصب و اجرا
 
+۱. کلون کردن ریپازیتوری:
 ```bash
-# ۱. کلون کردن ریپازیتوری
 git clone <REPO_URL>
 cd openlibrary-books
 
-# ۲. ساخت محیط مجازی
-python -m venv venv
-source venv/bin/activate      # ویندوز: venv\Scripts\activate
+```
 
-# ۳. نصب وابستگی‌ها
+۲. ساخت محیط مجازی (اختیاری):
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+
+```
+
+۳. نصب وابستگی‌ها:
+
+```bash
 pip install -r requirements.txt
 
-# ۴. اجرای اسکریپت
+```
+
+۴. اجرای اسکریپت:
+
+```bash
 python book_fetcher.py
 
 ```
@@ -77,18 +84,15 @@ python book_fetcher.py
 
 ```text
 openlibrary-books/
-├── book_fetcher.py     # اسکریپت اصلی
-├── requirements.txt    # وابستگی‌ها
+├── book_fetcher.py
+├── requirements.txt
 └── README.md
 
 ```
 
 ## منبع داده
 
-تمام اطلاعات از API عمومی و رایگان OpenLibrary دریافت می‌شود و نیازی به
-کلید API (API key) ندارد:
-[https://openlibrary.org/dev/docs/api/subjects](https://openlibrary.org/dev/docs/api/subjects?utm_source=gemini)
-
-```
+تمام اطلاعات از API عمومی و رایگان OpenLibrary دریافت می‌شود و نیازی به کلید API ندارد:
+https://openlibrary.org/dev/docs/api/subjects
 
 ```
