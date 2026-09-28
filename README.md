@@ -93,5 +93,3 @@ openlibrary-books/
 
 تمام اطلاعات از API عمومی و رایگان OpenLibrary دریافت می‌شود و نیازی به کلید API ندارد:
 https://openlibrary.org/dev/docs/api/subjects
-
-```
